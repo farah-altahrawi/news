@@ -7,6 +7,6 @@ initApp(app,express);
 
 app.listen(5000,()=>{
 
-    console.log("server is running .... 4000");
+    console.log("server is running .... 5000");
 
 })

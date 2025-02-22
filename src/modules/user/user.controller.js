@@ -28,7 +28,7 @@ export const deleteUser =  async(req,res,next)=>{
     return res.status(200).json({message:"success"})
 };
 
-export const uploudUserImage = async(req,res,next)=>{
+export const uploadUserImage = async(req,res,next)=>{
     const {id} = req.params; 
     const user = await UserModel.findByPk(id);
     if(user == null){

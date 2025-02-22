@@ -4,7 +4,7 @@ import { AppError } from "../../utils/AppError.js";
 
 export const getComment =  async (req,res)=>{
     const comments = await commentModel.findAll({
-        attributes:['description'],
+        attributes:['id','description'],
         include:{
             model:UserModel,
             attributes:['id','userName'],
